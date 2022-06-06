@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6d0367a1ce.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>OpenRussianLtam</title>
+
+</head>
+<div id="bg" class="bg__preloader"></div>
+<div id="preloader">
+    <div class="pre_wrapper">
+        <div id="text__loader" class="text__loader"><img src="../assets/images/Group 40.png"></div>
+    </div>
+</div>
+
+<script>
+    $(window).on('load', function() {
+        var $preloader = $('#preloader');
+        var $bg = $('#bg');
+        $bg.delay(1500).fadeOut('slow');
+        $preloader.delay(300).fadeOut('slow');
+    });
+</script>
+
+<body class="body">
+    <!-- Header -->
+    <header class="header">
+        <div class="header__navigation">
+            <div class="logo">
+
+                <img class="logo__img" src="../assets/images/Logo.png">
+                <span>OpenRussianLatn</span>
+            </div>
+            <nav class="nav menu">
+                <a class="active" href="index.html">Home</a>
+                <a href="#">Campus</a>
+                <a href="#">Education</a>
+                <a href="#">Alumni</a>
+                <a href="about.html">About</a>
+            </nav>
+            <nav class="nav reg">
+                <a href="log.html">Login</a>
+                <a class="btn__reg" href="reg.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="login__form">
+                <h1 class="componen__item-title">Register</h1>
+                <form class="form">
+                    <input class="input__form" type="text" placeholder="Name">
+                    <input class="input__form" type="email" placeholder="Email">
+                    <input class="input__form" type="password" placeholder="Password">
+                    <button type="button" class="btn" placeholder="Submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="header__navigation">
+            <div class="logo">
+
+                <img class="logo__img" src="../assets/images/Logo.png">
+                <span>OpenRussianLatn</span>
+            </div>
+            <nav class="nav foot">
+                <a class="active" href="index.html">Home</a>
+                <a href="#">Campus</a>
+                <a href="#">Education</a>
+                <a href="#">Alumni</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
